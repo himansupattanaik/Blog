@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>Blog Page</title>
+</head>
+
+<body>
+    <div id="app">
+        <center>
+            <h1>Create your Blog</h1>
+        </center>
+        <div id="blog-form">
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <input type="date" id="date" placeholder="Date" required>
+
+            <input type="text" id="title" placeholder="Title" required>
+
+            <textarea id="description" placeholder="Description" required></textarea>
+
+            <input type="file" id="image" accept="image/*" required>
+
+            <button onclick="createBlog()">Post</button>
+            <button id="btnn" onclick=" removeAllBlogs()">Remove All</button>
+
+        </div>
+
+        <div id="blog-list">
+            <center>
+                <h1>Show Blogs</h1>
+            </center>
+            <div class="blog-card-container" id="blog-card-container"></div>
+        </div>
+    </div>
+
+    <script src="blog.js">
+
+    </script>
+</body>
+
+</html>
